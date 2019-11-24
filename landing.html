@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="./index.js"></script>
+    <script defer src="./script.js"></script>
+    <title>Smart Attendance</title>
+    <style>
+        body {
+          margin: 50;
+          padding: 100;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column
+        }
+    
+        canvas {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      </style>
+</head>
+<body">
+    <div class="container">
+        <h1>Smart Attendance Manager</h1>
+        <div>
+            <form id="data">
+                <input type="text" id="teacherId" placeholder="Teacher Id">
+                <button type="button" value="submit"  onclick="register()">Submit</button>
+            </form>
+            <div id="info">
+                <div>
+                    <p id="root1"></p>
+                    <p id="root2"></p>
+                    <p id="root3"></p>
+                </div>
+                <div id="back" style="display: none;">
+                    <button type="button" value="submit"  onclick="deregister()" style="float: right;">Back</button>
+                    <button type="button" style="float: left;"><a href="./index.html" >Read Attendance</a></button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
